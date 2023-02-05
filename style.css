@@ -1,0 +1,259 @@
+/* REFERENCES */
+/* COLORS: #82dc82, #00aaff, #603939, #5a5858, #dede9f, #3b2424*/
+/* DIFFERENT SCREEN WIDTH: 991px, 768px */
+
+/* UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Arvo", serif;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+  display: block;
+}
+
+/* FONT STYLE */
+h1 {
+  color: #603939;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #603939;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+  text-align: center;
+}
+
+figcaption {
+  color: #3b2424;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  background-color: #82dc82;
+  padding: 1rem 1.5rem;
+}
+
+/* IMAGE AND FIGURE */
+
+img {
+  width: 15rem;
+  height: 15rem;
+}
+
+figure {
+  margin: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  width: 20rem;
+  height: 15rem;
+}
+
+/* NAVBAR */
+
+nav {
+  margin: 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  background-color: #00aaff;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0.5rem;
+}
+.active {
+  background-color: #dede9f;
+  color: #603939;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #3b2424;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+/* GAMES */
+.games {
+  background-image: url("images/animalcrossingbgpink.png");
+  background-size: cover;
+  padding: 2rem;
+}
+
+/* GALLERY */
+.gallery {
+  background-image: url("images/animalcrossingbggreen.png");
+  padding: 2rem;
+}
+
+/* TABLE */
+
+.text {
+  width: 50%;
+  text-align: justify;
+}
+
+/* FOOTER */
+footer {
+  background-color: #82dc82;
+  padding: 1rem;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+.thanks,
+.social,
+.links {
+  line-height: 1;
+}
+
+footer td {
+  width: 20%;
+  vertical-align: baseline;
+  text-align: center;
+  margin-left: 4rem;
+  font-size: small;
+  font-weight: bold;
+}
+
+.creator {
+  margin-top: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+/* EXTRA LARGE DEVICES */
+@media all and (min-width: 1200px) {
+  /* FONT */
+  h1,
+  h2,
+  p {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+}
+/* LARGE DEVICES */
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  /* FOOTER */
+  footer td {
+    width: 20%;
+    vertical-align: baseline;
+    text-align: center;
+    margin-left: 4rem;
+    font-size: small;
+  }
+}
+/* MEDIUM DEVICES */
+@media all and (min-width: 769px) and (max-width: 992px) {
+  /* FOOTER */
+  footer td {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-size: medium;
+  }
+}
+/* SMALL DEVICES */
+@media all and (min-width: 600px) and (max-width: 768px) {
+  /* MAIN */
+  body {
+    line-height: 1.5;
+  }
+
+  /* IMAGES */
+  figcaption {
+    font-size: small;
+    line-height: 1.5;
+  }
+
+  .gallery img {
+    width: 15rem;
+    height: 10rem;
+  }
+
+  /* NAVBAR */
+  nav a {
+    font-size: small;
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
+
+  /* FONT */
+  h1,
+  h2,
+  p {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer td {
+    font-size: smaller;
+    display: block;
+    width: 80%;
+  }
+}
+/* EXTRA SMALL DEVICES */
+@media all and (min-width: 400px) and (max-width: 600px) {
+  body {
+    line-height: 1.5;
+  }
+
+  table,
+  tr,
+  td {
+    display: inline-block;
+  }
+
+  figcaption {
+    font-size: small;
+    line-height: 1.5;
+  }
+
+  nav a {
+    font-size: small;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    display: block;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  p {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer td {
+    font-size: smaller;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
